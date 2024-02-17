@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="style/index_style.css" />
+  </head>
+  <body>
+    <img src="style/loader.gif" id="loader" alt="" />
+    <div id="bod" style="display: none">
+      <button
+        id="uparrow"
+        onclick="window.scrollTo({top:0,behavior:'smooth'});"
+      >
+        <p>⬆</p>
+      </button>
+      <section id="sc1">
+        <div id="header">
+          <p id="title">Your Mediator</p>
+          <a href="#"
+            ><button><p>Log in</p></button></a
+          >
+        </div>
+        <div class="co_p" style="padding-top: 15rem">
+          <p style="color: black">Feels Like Home</p>
+          <p style="color: black">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+            incidunt, sequi iste modi non ducimus nihil eaque magni assumenda
+            exercitationem repudiandae dignissimos reiciendis rerum quam
+            dolores, quo sint nostrum atque?
+          </p>
+        </div>
+      </section>
+      <section id="sec2">
+        <div class="co_p" style="margin-top: 5rem">
+          <p>Our Services</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+            incidunt, sequi iste modi non ducimus nihil eaque magni assumenda
+            exercitationem repudiandae dignissimos reiciendis rerum quam
+            dolores, quo sint nostrum atque?
+          </p>
+        </div>
+      </section>
+      <section id="sc3">
+        <div class="co_p">
+          <p style="color: black">About us</p>
+          <p style="color: black">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+            incidunt, sequi iste modi non ducimus nihil eaque magni assumenda
+            exercitationem repudiandae dignissimos reiciendis rerum quam
+            dolores, quo sint nostrum atque?
+          </p>
+        </div>
+      </section>
+
+      <section id="sec4">
+        <div class="co_p" style="margin-top: -2rem">
+          <p>Our Services</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+            incidunt, sequi iste modi non ducimus nihil eaque magni assumenda
+            exercitationem repudiandae dignissimos reiciendis rerum quam
+            dolores, quo sint nostrum atque?
+          </p>
+        </div>
+        <footer><p>&circleddash; CopyRight 2024</p></footer>
+      </section>
+    </div>
+    <script>
+      setInterval(function () {
+        if (window.scrollY > 0) {
+          document.getElementById("header").style.backgroundColor = "black";
+          document.getElementById("uparrow").style.display = "block";
+        } else {
+          document.getElementById("header").style.backgroundColor = "";
+          document.getElementById("uparrow").style.display = "none";
+        }
+      }, 1);
+      setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("bod").style.display = "block";
+      }, 1500);
+    </script>
+  </body>
+</html>
